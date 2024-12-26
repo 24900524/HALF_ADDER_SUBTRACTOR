@@ -50,7 +50,7 @@ Figure -02 HALF Subtractor
 
 **Program:**
 ```
-module exp3(a,b,sum,cout,diff,borr);
+module exp3(a,b,sum,carry,diff,borr);
 input a,b;
 output sum,cout,diff,borr;
 xor g1(sum,a,b);
