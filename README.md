@@ -50,15 +50,13 @@ Figure -02 HALF Subtractor
 
 **Program:**
 ```
-module exp3(a,b,sum,carry,diff,borr);
+module exp3(a,b,sum,carry,difference,borrow);
 input a,b;
-output sum,carry,diff,borr;
-xor g1(sum,a,b);
-and g2(carry,a,b);
-wire w1;
-xor g3(diff,a,b);
-not g4(w1,a);
-and g5(borr,w1,b);
+output sum,carry,difference,borrow;
+assign sum= (a ^ b);
+assign carry= ( a & b);
+assign difference= (a ^ b);
+assign borrow= ( ~a & b);
 endmodule
 ```
 
