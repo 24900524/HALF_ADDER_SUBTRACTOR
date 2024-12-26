@@ -52,9 +52,9 @@ Figure -02 HALF Subtractor
 ```
 module exp3(a,b,sum,carry,diff,borr);
 input a,b;
-output sum,cout,diff,borr;
+output sum,carry,diff,borr;
 xor g1(sum,a,b);
-and g2(cout,a,b);
+and g2(carry,a,b);
 wire w1;
 xor g3(diff,a,b);
 not g4(w1,a);
